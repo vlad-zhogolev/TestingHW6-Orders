@@ -62,8 +62,8 @@ public class OrdersTestNGTest {
 
         // Menu Item Selection
         window.menuItemWithPath("File", "New").click();
-        
-        for(int i = 0; i < customerDataArray.length ; ++i) {
+
+        for (int i = 0; i < customerDataArray.length; ++i) {
             window.menuItemWithPath("Orders", "New order...").click();
 
             // Filling an order
