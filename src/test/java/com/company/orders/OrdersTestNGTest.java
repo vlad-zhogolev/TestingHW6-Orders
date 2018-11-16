@@ -57,7 +57,23 @@ public class OrdersTestNGTest {
                 new CustomerData("Kenyon Stuart", "73668 East Daniels Way", "Thousand Oaks",
                         "NE", "06842", "1330019087", "01/01/21"),
                 new CustomerData("Ezra Sparks", "64574 Mcclain Way", "Florence",
-                        "MD", "18769", "1978201255", "01/10/22")
+                        "MD", "18769", "1978201255", "01/10/22"),
+                new CustomerData("Mia Pratt", "27891 Saint Lucia Blvd.", "Kona",
+                        "FL", "42423", "2062480260", "01/11/22" ),
+                new CustomerData("Gavin Roberson", "19804 Uzbekistan Ct.", "Atlantic City",
+                        "NY", "06595", "1528583210", "01/03/25"),
+                new CustomerData("Uma Donovan", "64440 England Ln.", "Bakersfield",
+                        "NJ", "18396", "1621081159", "01/01/20"),
+                new CustomerData("Igor Newman", "65172 Bolivia Way", "Homer",
+                        "NE", "90889" , "1516240863", "01/05/22"),
+                new CustomerData("Amery Freeman", "50923 Garner Ct.", "Santa Barbara",
+                        "CT", "37177", "2052255336", "01/08/24"),
+                new CustomerData("Rana Rodriquez", "74465 North Barbados Ct.", "Biddeford",
+                        "MA", "94671","1669447557", "01/01/23"),
+                new CustomerData("Chelsea Sullivan", "82225 East Boyer St.", "Pittsburgh",
+                        "MA", "20188", "2146313492", "01/04/24"),
+                new CustomerData("Norman Ward", "26083 Hartman Ln.", "Weirton",
+                        "WA", "38447", "1478127250" , "01/02/25")
         };
 
         // Menu Item Selection
@@ -93,8 +109,6 @@ public class OrdersTestNGTest {
                 window.dialog(DialogMatcher.withTitle("Confirmation"));
         confirmation.button(JButtonMatcher.withText("No")).click();*/
     }
-
-    @DataProvider(name = "test data")
 
     @AfterMethod
     public void tearDown() {
